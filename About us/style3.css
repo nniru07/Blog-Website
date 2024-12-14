@@ -1,0 +1,81 @@
+/* Reset some basic styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.navbar {
+  width: 100%;
+  padding: 15px 20px;
+  display: flex;
+  justify-content: flex-end;
+  background-color: #333;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links a {
+  color: white;
+  text-decoration: none;
+  margin-left: 20px;
+  font-size: 1.2em;
+  display: flex;
+  align-items: center;
+}
+
+.nav-links a i {
+  margin-right: 8px;
+  color: white;
+}
+
+.nav-links a:hover {
+  text-decoration: underline;
+}
+
+/* Styling for the About section */
+.about {
+  position: relative;
+  background-image: url("istockphoto-1402604850-612x612.jpg"); /* Replace with your own background image URL */
+  background-size: cover;
+  background-position: center;
+  color: white;
+  padding: 225px 20px;
+  text-align: center;
+}
+
+.about::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.4); /* Dark overlay for better text contrast */
+}
+
+.about-content {
+  position: relative;
+  z-index: 2;
+}
+
+/* .about h1 {
+  font-size: 3rem;
+  margin-bottom: 20px;
+  font-weight: bold;
+} */
+
+.about p {
+  font-size: 1.5rem;
+  line-height: 1.6;
+  margin-bottom: 20px;
+  margin-top: 80px;
+  max-width: 800px;
+  margin-left: auto;
+  margin-right: auto;
+}
